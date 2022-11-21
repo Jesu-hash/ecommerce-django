@@ -1,11 +1,9 @@
-from ast import keyword
-from tkinter import E
 from django.shortcuts import get_object_or_404, render, redirect
 from .models import Product, ReviewRating
 from category.models import Category
 from carts.models import CartItem
 from carts.views import _cart_id
-from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
+from django.core.paginator import Paginator
 from django.db.models import Q
 from .forms import ReviewForm
 from django.contrib import messages
