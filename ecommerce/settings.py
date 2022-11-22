@@ -90,6 +90,18 @@ AUTH_USER_MODEL = 'accounts.Account'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 #Database Configuration
+#Migrate from sqlite db to postgres aws
+# DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'ebdb',
+#             'USER': 'jprieto',
+#             'PASSWORD': 'Lochita22',
+#             'HOST': 'awseb-e-kwgunipqxm-stack-awsebrdsdatabase-ub8wtajqm58s.cofzpy4gowww.us-west-2.rds.amazonaws.com',
+#             'PORT': 5432,
+#         }
+#     }
+
 if 'RDS_DB_NAME' in os.environ:
     DATABASES = {
         'default': {
