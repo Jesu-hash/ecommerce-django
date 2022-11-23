@@ -25,8 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool, default=True)
-
+#DEBUG = config('DEBUG', cast=bool, default=True)
+DEBUG = False
 ALLOWED_HOSTS = ['ecommerce-env.us-west-2.elasticbeanstalk.com']
         
 #ALLOWED_HOSTS = []
